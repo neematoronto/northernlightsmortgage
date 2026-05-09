@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/neema/.nvm/versions/node/**)",
+      "Bash(brew list *)",
+      "Bash(nvm ls *)",
+      "Bash(nvm install *)"
+    ]
+  }
+}

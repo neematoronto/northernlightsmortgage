@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About" description="Meet the team behind Northern Lights Mortgage — Toronto's trusted first-time buyer mortgage specialists.">
+
+  <!-- Page Hero -->
+  <section class="bg-[#F5F5F5] py-16 md:py-20 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-brand text-sm font-semibold uppercase tracking-widest mb-3">About Us</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-charcoal">Built for Toronto's First-Time Buyers</h1>
+        <p class="text-body text-lg leading-relaxed">
+          We started Northern Lights Mortgage with one goal: make the mortgage process as clear and stress-free as possible for people buying their first home.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Broker Intro -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <!-- Photo Placeholder -->
+        <div class="relative">
+          <div class="aspect-[4/5] max-w-sm mx-auto lg:mx-0 bg-gradient-to-br from-brand/10 to-brand/5 rounded-2xl border border-gray-200 flex flex-col items-center justify-center overflow-hidden">
+            <svg class="w-32 h-32 text-brand/20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <p class="text-brand/40 text-sm mt-3 font-medium">Broker Photo</p>
+          </div>
+          <!-- Accent badge -->
+          <div class="absolute bottom-6 right-6 lg:right-0 bg-brand text-white px-5 py-3 rounded-xl shadow-lg">
+            <p class="font-bold text-2xl">10+</p>
+            <p class="text-white/80 text-xs">Years Experience</p>
+          </div>
+        </div>
+
+        <!-- Story -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-charcoal mb-2">Hi, I'm Alexandra Novak</h2>
+          <p class="text-brand font-semibold mb-6">Principal Broker & Founder</p>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>
+              I grew up in Toronto and remember how overwhelming it felt when my family was looking for our first home. The jargon, the paperwork, the endless lender options — it was a lot. That experience is exactly why I became a mortgage broker.
+            </p>
+            <p>
+              Over the past decade I've helped hundreds of families across the GTA navigate the mortgage process. I've built relationships with over 40 lenders — from the big banks to credit unions and private lenders — which means I can find you options that aren't available on the open market.
+            </p>
+            <p>
+              At Northern Lights Mortgage, we believe buying your first home should feel exciting, not terrifying. We do the heavy lifting so you can focus on what matters: finding the home you love.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-6">
+            <div>
+              <p class="text-3xl font-extrabold text-brand">500+</p>
+              <p class="text-sm text-gray-500">Mortgages Closed</p>
+            </div>
+            <div>
+              <p class="text-3xl font-extrabold text-brand">40+</p>
+              <p class="text-sm text-gray-500">Lender Partners</p>
+            </div>
+            <div>
+              <p class="text-3xl font-extrabold text-brand">98%</p>
+              <p class="text-sm text-gray-500">Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-20 bg-[#F5F5F5]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="section-heading">Our Story</h2>
+      <div class="space-y-5 text-gray-600 leading-relaxed text-left mt-8 bg-white border border-gray-200 rounded-2xl p-8 md:p-12 shadow-sm">
+        <p>
+          Northern Lights Mortgage was founded in 2014 with a simple but powerful idea: first-time buyers deserve a broker who puts their interests first — not the lender's commissions.
+        </p>
+        <p>
+          We were tired of seeing people sign mortgages they didn't fully understand, locked into terms that didn't suit their lives. We built our practice around radical transparency: no hidden fees, no jargon, no pressure. Just honest, expert advice and access to Canada's best rates.
+        </p>
+        <p>
+          Based in Toronto's financial district, we serve buyers across the Greater Toronto Area — from first-time condo buyers in the downtown core to families searching for their dream home in the suburbs. Wherever you're looking, we're here to help you get there.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="section-heading">Our Values</h2>
+        <p class="section-subheading">The principles that guide every conversation and every mortgage we arrange.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          {
+            title: 'Transparency',
+            desc: 'We explain everything clearly — fees, terms, and trade-offs — so you always know exactly what you\'re agreeing to.',
+            icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z',
+            color: 'bg-blue-50 text-brand',
+          },
+          {
+            title: 'Client First',
+            desc: 'Your goals drive every decision we make. We succeed when you get the mortgage that truly fits your life.',
+            icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
+            color: 'bg-red-50 text-red-500',
+          },
+          {
+            title: 'Accessibility',
+            desc: 'We\'re available when you need us — evenings, weekends, and same-day responses. Home buying doesn\'t keep office hours.',
+            icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',
+            color: 'bg-green-50 text-green-600',
+          },
+          {
+            title: 'Integrity',
+            desc: 'We recommend the mortgage that\'s right for you, even if it\'s not the most profitable for us. Always.',
+            icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+            color: 'bg-purple-50 text-purple-600',
+          },
+        ].map(v => (
+          <div class="card text-center hover:-translate-y-1 transition-transform duration-200">
+            <div class={`w-14 h-14 ${v.color} rounded-2xl flex items-center justify-center mx-auto mb-5`}>
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={v.icon}/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-charcoal mb-2">{v.title}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>

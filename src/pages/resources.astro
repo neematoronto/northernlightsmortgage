@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const featuredPost = {
+  title: "The Complete First-Time Buyer's Guide to Mortgages in Toronto (2025)",
+  excerpt: "Everything you need to know about buying your first home in Toronto — from saving your down payment and getting pre-approved, to closing day and beyond. Updated for 2025 with the latest rates, incentive programs, and stress test rules.",
+  date: 'January 15, 2025',
+  readTime: '12 min read',
+  category: 'First-Time Buyers',
+  slug: '#',
+};
+
+const posts = [
+  {
+    title: 'How the Mortgage Stress Test Works in 2025',
+    excerpt: 'Canada\'s stress test requires you to qualify at a rate higher than your actual mortgage rate. Here\'s how it\'s calculated and what it means for your buying power.',
+    date: 'March 8, 2025',
+    readTime: '6 min read',
+    category: 'Mortgage Basics',
+    slug: '#',
+  },
+  {
+    title: 'RRSP Home Buyers\' Plan: Your $35,000 Down Payment Boost',
+    excerpt: 'The RRSP HBP lets first-time buyers withdraw up to $35,000 tax-free for a down payment. We break down exactly how to use it — and the rules you need to know.',
+    date: 'February 22, 2025',
+    readTime: '5 min read',
+    category: 'Government Programs',
+    slug: '#',
+  },
+  {
+    title: 'Fixed vs. Variable Rate: Which Mortgage is Right for You?',
+    excerpt: 'The fixed vs. variable debate is one of the biggest decisions you\'ll make. We lay out the pros, cons, and scenarios where each option wins — without the hype.',
+    date: 'February 5, 2025',
+    readTime: '7 min read',
+    category: 'Rate Strategy',
+    slug: '#',
+  },
+  {
+    title: 'Understanding CMHC Mortgage Insurance',
+    excerpt: 'If your down payment is less than 20%, you\'ll need CMHC insurance. We explain what it costs, how it\'s calculated, and why it\'s not necessarily a bad thing.',
+    date: 'January 28, 2025',
+    readTime: '5 min read',
+    category: 'Mortgage Basics',
+    slug: '#',
+  },
+  {
+    title: 'First Home Savings Account (FHSA): The Newest First-Time Buyer Perk',
+    excerpt: 'The FHSA lets you contribute up to $8,000/year (max $40,000 lifetime) and withdraw it tax-free for a first home. This is one of the most powerful tools available to you.',
+    date: 'January 10, 2025',
+    readTime: '4 min read',
+    category: 'Government Programs',
+    slug: '#',
+  },
+  {
+    title: 'Closing Costs in Ontario: What to Budget For',
+    excerpt: 'Beyond the down payment, closing costs in Ontario can add up to thousands of dollars. Land transfer tax, legal fees, home inspection — here\'s the full breakdown.',
+    date: 'December 18, 2024',
+    readTime: '6 min read',
+    category: 'Buying Tips',
+    slug: '#',
+  },
+];
+
+const faqs = [
+  {
+    q: 'How much down payment do I need to buy a home in Toronto?',
+    a: 'The minimum down payment in Canada depends on the purchase price. For homes under $500,000, the minimum is 5%. For homes between $500,000 and $999,999, it\'s 5% on the first $500,000 and 10% on the remainder. For homes $1 million or more, the minimum is 20%. Most Toronto homes exceed $500,000, so first-time buyers often need at least $50,000–$75,000 saved.',
+  },
+  {
+    q: 'What credit score do I need to qualify for a mortgage?',
+    a: 'Most lenders in Canada require a minimum credit score of 680 for insured mortgages (less than 20% down) and 600 for conventional mortgages. However, the higher your score, the better your rate options. We work with buyers at all credit levels — if your score needs improvement, we\'ll tell you exactly what steps to take.',
+  },
+  {
+    q: 'How long does the mortgage pre-approval process take?',
+    a: 'With all documents ready, we can typically obtain a pre-approval within 24–48 hours. The documents you\'ll need include proof of income (pay stubs or Notice of Assessment for self-employed), bank statements, and ID. A pre-approval rate hold lasts up to 120 days, giving you time to shop with confidence.',
+  },
+  {
+    q: 'What is the mortgage stress test and will I pass it?',
+    a: 'The mortgage stress test requires you to qualify at the higher of the Bank of Canada\'s qualifying rate (currently 5.25%) or your actual mortgage rate plus 2%. This ensures you could still afford your mortgage if rates rose. During our free consultation, we\'ll calculate exactly what purchase price you can qualify for under the stress test.',
+  },
+  {
+    q: 'Is it better to use a bank or a mortgage broker?',
+    a: 'Mortgage brokers typically have access to far more options than a single bank — we work with over 40 lenders, including banks, credit unions, and private lenders, and our service is free to borrowers (lenders pay our fee). Many clients find they qualify for lower rates through a broker. That said, the best choice depends on your situation — we\'re happy to give you an honest comparison.',
+  },
+];
+---
+
+<Layout title="Resources" description="First-time buyer mortgage guides, tips, and FAQs for Toronto home buyers.">
+
+  <!-- Page Hero -->
+  <section class="bg-[#F5F5F5] py-16 md:py-20 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-brand text-sm font-semibold uppercase tracking-widest mb-3">Resources</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-charcoal">Your Mortgage Knowledge Hub</h1>
+        <p class="text-body text-lg leading-relaxed">
+          Free guides, tips, and answers to the questions every Toronto first-time buyer is asking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="py-16 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-brand font-semibold text-sm uppercase tracking-widest mb-6">Featured Guide</p>
+      <div class="bg-[#F5F5F5] border border-gray-200 rounded-2xl overflow-hidden flex flex-col lg:flex-row shadow-sm hover:shadow-md transition-shadow">
+        <!-- Image placeholder -->
+        <div class="lg:w-2/5 bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center p-16 min-h-[240px]">
+          <svg class="w-24 h-24 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <div class="p-8 lg:p-12 flex flex-col justify-center lg:w-3/5">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-brand/10 text-brand text-xs font-semibold px-3 py-1 rounded-full">{featuredPost.category}</span>
+            <span class="text-gray-400 text-sm">{featuredPost.date}</span>
+            <span class="text-gray-400 text-sm">{featuredPost.readTime}</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-charcoal mb-4 leading-tight">{featuredPost.title}</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">{featuredPost.excerpt}</p>
+          <a href={featuredPost.slug} class="btn-primary self-start">
+            Read Full Guide →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="py-16 bg-[#F5F5F5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-charcoal mb-8">Latest Articles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map(post => (
+          <article class="card flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-200">
+            <!-- Image placeholder -->
+            <div class="h-40 bg-gradient-to-br from-brand/8 to-brand/4 rounded-lg mb-5 flex items-center justify-center border border-gray-100">
+              <svg class="w-12 h-12 text-brand/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-brand/10 text-brand text-xs font-semibold px-2.5 py-0.5 rounded-full">{post.category}</span>
+            </div>
+            <h3 class="text-lg font-bold text-charcoal mb-2 group-hover:text-brand transition-colors leading-snug">
+              <a href={post.slug}>{post.title}</a>
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed flex-1 mb-4">{post.excerpt}</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100 text-xs text-gray-400">
+              <span>{post.date}</span>
+              <span>{post.readTime}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+        <p class="section-subheading">Quick answers to the questions first-time buyers ask us most.</p>
+      </div>
+      <div class="space-y-4" id="faq-container">
+        {faqs.map((faq, i) => (
+          <div class="bg-[#F5F5F5] border border-gray-200 rounded-xl overflow-hidden">
+            <button
+              class="faq-btn w-full flex items-center justify-between p-5 text-left font-semibold text-charcoal hover:bg-gray-100 transition-colors"
+              data-index={i}
+              aria-expanded="false"
+            >
+              <span class="pr-4">{faq.q}</span>
+              <svg class="faq-icon w-5 h-5 text-brand flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-5 pb-5">
+              <p class="text-gray-600 leading-relaxed text-sm pt-1 border-t border-gray-200">{faq.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling as HTMLElement;
+      const icon = btn.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = !answer.classList.contains('hidden');
+
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(ic => ic.classList.remove('rotate-180'));
+      document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

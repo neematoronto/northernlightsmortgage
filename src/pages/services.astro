@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    title: 'First-Time Buyer Mortgages',
+    desc: 'Designed for buyers purchasing their first property, our first-time buyer program guides you through every step — from understanding your borrowing power to final closing. We explain CMHC insurance, down payment requirements, and government incentives so you can make fully informed decisions.',
+    features: [
+      'Access to FHSA and RRSP Home Buyers\' Plan',
+      'CMHC mortgage insurance guidance',
+      'First-Time Home Buyer Incentive',
+      'Pre-approval in as little as 24 hours',
+    ],
+    icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
+  },
+  {
+    title: 'Pre-Approvals',
+    desc: 'A mortgage pre-approval gives you a clear picture of how much you can borrow and locks in a rate for up to 120 days. In Toronto\'s competitive market, sellers take pre-approved buyers far more seriously. We make the process quick, simple, and stress-free.',
+    features: [
+      'Rate hold up to 120 days',
+      'Strengthens your offer in a competitive market',
+      'Identify and resolve credit issues early',
+      'Clear maximum purchase price',
+    ],
+    icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
+  },
+  {
+    title: 'Mortgage Renewals',
+    desc: 'Your mortgage renewal is one of the most important financial decisions you\'ll make. Rather than simply signing your existing lender\'s renewal offer, let us shop the market on your behalf. Most Canadians leave thousands of dollars on the table by not comparing rates at renewal.',
+    features: [
+      'Rate comparison across 40+ lenders',
+      'Start the process 120 days before maturity',
+      'Renegotiate terms to suit your current life',
+      'Completely free service — no obligation',
+    ],
+    icon: 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15',
+  },
+  {
+    title: 'Refinancing',
+    desc: 'Refinancing lets you access the equity you\'ve built in your home, consolidate high-interest debt, fund renovations, or lower your monthly payments. We analyse your current mortgage, goals, and break costs to determine whether refinancing makes financial sense for you.',
+    features: [
+      'Access up to 80% of your home\'s value',
+      'Debt consolidation at lower rates',
+      'Fund renovations or investments',
+      'Full break-cost analysis before proceeding',
+    ],
+    icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+  },
+];
+---
+
+<Layout title="Services" description="Mortgage services in Toronto — First-Time Buyer Mortgages, Pre-Approvals, Renewals, and Refinancing.">
+
+  <!-- Page Hero -->
+  <section class="bg-[#F5F5F5] py-16 md:py-20 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-brand text-sm font-semibold uppercase tracking-widest mb-3">Services</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-charcoal">Mortgage Solutions That Fit Your Life</h1>
+        <p class="text-body text-lg leading-relaxed">
+          Whether you're buying your first home, renewing, or refinancing — we have the expertise and lender relationships to find you the right mortgage.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services List -->
+  <section class="py-20 bg-[#F5F5F5]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      {services.map((service, i) => (
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col md:flex-row">
+          <!-- Left blue border accent -->
+          <div class="w-full md:w-2 bg-brand flex-shrink-0"></div>
+          <div class="p-8 flex-1">
+            <div class="flex items-start gap-5 mb-5">
+              <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon}/>
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold text-charcoal">{service.title}</h2>
+              </div>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">{service.desc}</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {service.features.map(f => (
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <div class="mt-6 pt-5 border-t border-gray-100">
+              <a href="/contact" class="btn-primary text-sm">
+                Ask About This Service →
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Why Us Strip -->
+  <section class="py-16 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="section-heading">Why Use a Mortgage Broker?</h2>
+        <p class="section-subheading">Your bank has one portfolio of products. We have access to over 40 lenders — and we work for you, not them.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        {[
+          { label: 'No Cost to You', desc: 'Lenders pay our fee. Our advice and service are completely free for borrowers.' },
+          { label: 'Unbiased Advice', desc: 'We have no incentive to push you toward any specific lender or product.' },
+          { label: 'Better Access', desc: 'We access rates and products not available directly to the public.' },
+        ].map(item => (
+          <div class="text-center p-6 bg-[#F5F5F5] rounded-xl">
+            <h3 class="font-bold text-charcoal mb-2">{item.label}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
